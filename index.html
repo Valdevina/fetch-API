@@ -9,14 +9,19 @@
 <body>
     <header>
         <h1> Dicionário online</h1>
-        <form >
-            <input type="text"    placeholder="Digite uma palavra">
-            
-            <button>buscar</button>
-        </form>
+        
         
     </header>
-    <main></main>
+    <main>
+        <form action="\enviar" method="post">
+            <label for="firstname">Nome:</label>
+            <input type="text" placeholder="Digite seu nome" minlength="3" maxlength="45" required>
+            <br>
+            <label for="yearsold">Idade</label>
+            <input type="number" placeholder="Digite sua idade " min="13"  max="100" required>
+            <button typr="submit">Enviar</button>
+        </form>
+    </main>
     <script type="module" src="script.js"></script>
 </body>
 </html>
